@@ -2,15 +2,15 @@
   "permalinkServiceUrl": "http://localhost:5001/",
   "elevationServiceUrl": "http://localhost:5002/",
   "editServiceUrl": "http://localhost:5012/",
-  "dataproductServiceUrl": "http://localhost:5023/",
-  "searchServiceUrl": "http://localhost:5011/",
+  "dataproductServiceUrl": "https://geo.so.ch/api/dataproduct/v1/",
+  "searchServiceUrl": "https://geo.so.ch/api/search/v2/",
   "searchDataServiceUrl": "http://localhost:5012/",
-  "authServiceUrl": "http://localhost:5017/",
+  "authServiceUrl": "https://geo.so.ch/auth/",
   "mapInfoService":  "http://localhost:5016/",
-  "featureReportService": "http://localhost:5011/",
-  "landRegisterService": "http://localhost:5020/",
+  "featureReportService": "https://geo.so.ch/api/search/v2/",
+  "landRegisterService": "https://geo.so.ch/api/v1/landreg/",
   "cccConfigService": "http://localhost:5021/",
-  "plotInfoService": "http://localhost:5022/",
+  "plotInfoService": "https://geo.so.ch/api/v1/plotinfo/",
   "translationsPath": "/translations",
   "assetsPath": "/assets",
   "urlPositionFormat": "centerAndZoom",
@@ -38,6 +38,33 @@
   "externalLayerFeatureInfoFormats": {
       "wms.geo.admin.ch": "application/vnd.ogc.gml"
   },
+  "projections": [
+    {
+      "code": "EPSG:32632",
+      "proj": "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs",
+      "label": "WGS 84 / UTM zone 32N"
+    },
+    {
+      "code": "EPSG:21781",
+      "proj": "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs",
+      "label": "CH1903 / LV03"
+    },
+    {
+      "code": "EPSG:2056",
+      "proj": "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs",
+      "label": "CH1903+ / LV95"
+    },
+    {
+      "code": "EPSG:25832",
+      "proj": "+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+      "label": "ETRS89 / UTM 32N"
+    },
+    {
+      "code": "EPSG:31983",
+      "proj": "+proj=utm +zone=23 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+      "label": "SIRGAS 2000 / UTM zone 23S"
+    }
+  ],
   "plugins": {
       "mobile": [
         {
@@ -101,20 +128,6 @@
           }
         },
         {
-          "name": "Identify",
-          "cfg": {
-            "params": {
-              "FI_POINT_TOLERANCE": 32,
-              "FI_LINE_TOLERANCE": 16,
-              "FI_POLYGON_TOLERANCE": 8,
-              "feature_count": 20
-            },
-            "exportFormat": null,
-            "longAttributesDisplay": "wrap",
-            "displayResultTree": false
-          }
-        },
-        {
           "name": "Share",
           "cfg": {
             "showSocials": true,
@@ -150,6 +163,7 @@
             "flattenGroups": true,
             "legendThumbnail": "legend_thumbnail.svg",
             "bboxDependentLegend": true,
+            "scaleDependentLegend": "theme",
             "layerInfoWindowSize": {"width": 480, "height": 400}
           },
           "mapClickAction": "identify"
@@ -193,6 +207,15 @@
         {
           "name": "PlotInfoTool",
           "cfg": {
+            "params": {
+              "FI_POINT_TOLERANCE": 32,
+              "FI_LINE_TOLERANCE": 16,
+              "FI_POLYGON_TOLERANCE": 8,
+              "feature_count": 20
+            },
+            "exportFormat": null,
+            "longAttributesDisplay": "wrap",
+            "displayResultTree": false,
             "toolLayers": ["ch.so.agi.av.grundstuecke"],
             "infoQueries": [
               {
@@ -283,7 +306,6 @@
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
                 {"key": "LayerTree", "icon": "layers"},
-                {"key": "PlotInfoTool", "icon": "plot_info", "comment": true},
                 {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Measure", "icon": "measure"},
@@ -336,25 +358,10 @@
             "flattenGroups": true,
             "legendThumbnail": "legend_thumbnail.svg",
             "bboxDependentLegend": true,
+            "scaleDependentLegend": "theme",
             "layerInfoWindowSize": {"width": 480, "height": 400}
           },
           "mapClickAction": "identify"
-        },
-        {
-          "name": "Identify",
-          "cfg": {
-            "params": {
-              "FI_POINT_TOLERANCE": 16,
-              "FI_LINE_TOLERANCE": 8,
-              "FI_POLYGON_TOLERANCE": 4,
-              "feature_count": 20
-            },
-            "exportFormat": null,
-            "longAttributesDisplay": "wrap",
-            "displayResultTree": false,
-            "initialWidth": 480,
-            "initialHeight": 550
-          }
         },
         {
           "name": "MapTip"
@@ -423,6 +430,17 @@
         {
           "name": "PlotInfoTool",
           "cfg": {
+            "params": {
+              "FI_POINT_TOLERANCE": 16,
+              "FI_LINE_TOLERANCE": 8,
+              "FI_POLYGON_TOLERANCE": 4,
+              "feature_count": 20
+            },
+            "exportFormat": null,
+            "longAttributesDisplay": "wrap",
+            "displayResultTree": false,
+            "initialWidth": 480,
+            "initialHeight": 550,
             "toolLayers": ["ch.so.agi.av.grundstuecke"],
             "infoQueries": [
               {

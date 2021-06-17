@@ -1,0 +1,298 @@
+{
+  "locale": "de-DE",
+  "messages": {
+    "appmenu": {
+      "items": {
+        "LandRegisterExtract": "Auszug Plan für das Grundbuch",
+        "DxfExport": "DXF-Export",
+        "Help": "Hilfe",
+        "LayerTree": "Kartenebenen und Legende",
+        "Measure": "Messen",
+        "Print": "Drucken",
+        "RasterExport": "Raster-Export",
+        "Share": "Teilen",
+        "ThemeSwitcher": "Themen",
+        "Tools": "Werkzeuge",
+        "IdentifyRegion": "Region abfragen",
+        "Redlining": "Zeichnen",
+        "Editing": "Editieren",
+        "Login": "Anmelden",
+        "Logout": "Abmelden",
+        "PlotInfoTool": "Grundstücksinformation",
+        "PlotInfoTool_comment": " "
+      },
+      "menulabel": "Karte & Werkzeuge"
+    },
+    "ccc": {
+      "createObject": "Objektgeometrie erfassen",
+      "editObject": "Objektgeometrie editieren",
+      "showObject": "Objekt(e) selektiert",
+      "configError": "CCC Konfigurationsfehler",
+      "connError": "CCC-Verbindung wurde geschlossen",
+      "commit": "Übernehmen",
+      "cancel": "Abbrechen",
+      "deselect": "Selektion aufheben"
+    },
+    "searchbox": {
+      "coordinates": "Koordinaten",
+      "placeholder": "Ort suchen oder Karte hinzufügen...",
+      "recent": "Zuletzt gesucht",
+      "filter": "Suche verfeinern",
+      "places": "Orte",
+      "layers": "Karten",
+      "more": "weitere Treffer",
+      "morelayers": "Weitere Treffer verfügbar",
+      "nodescription": "Keine Beschreibung verfügbar"
+    },
+    "bgswitcher": {
+      "nobg": "Kein Hintergrund"
+    },
+    "bottombar": {
+      "mousepos_label": "Koordinaten",
+      "scale_label": "Massstab",
+      "terms_label": "Nutzungsbedingungen",
+      "viewertitle_label": "Geoportal Kt. Solothurn"
+    },
+    "copybtn": {
+      "click_to_copy": "Kopieren in Zwischenablage",
+      "copied": "Kopiert"
+    },
+    "dxfexport": {
+      "layers": "Ebenen",
+      "selectinfo": "Rechteck aufziehen um die zu exportierende Region",
+      "symbologyscale": "Darstellungsmassstab"
+    },
+    "editing": {
+      "maximize": "Maximieren",
+      "minimize": "Minimieren",
+      "canceldelete": "Abbrechen",
+      "commit": "Speichern",
+      "delete": "Löschen",
+      "discard": "Abbrechen",
+      "draw": "Zeichnen",
+      "feature": "Objekt",
+      "fields": "Felder",
+      "layer": "Kartenebene",
+      "noeditablelayers": "Keine editierbare Kartenebenen.",
+      "pick": "Auswählen",
+      "reallydelete": "Löschen",
+      "select": "Auswählen"
+    },
+    "fileselector": {
+      "placeholder": "Datei auswählen"
+    },
+    "heightprofile": {
+      "asl": "ü.M.",
+      "distance": "Distanz",
+      "height": "Höhe",
+      "loading": "Höhenprofil wird berechnet..."
+    },
+    "identify": {
+      "querying": "Objekte werden abgefragt...",
+      "noresults": "Keine Resultate an der ausgewählten Position",
+      "export": "Exportieren",
+      "exportformat": "Exportformat",
+      "featureReport": "Objektblatt",
+      "noattributes": "Keine Attribute",
+      "title": "Objektinformationen",
+      "link": "Link"
+    },
+    "identifyregion": {
+      "info": "Polygon um die zu identifizierende Objekte zeichnen"
+    },
+    "importlayer": {
+      "addlayer": "Kartenebene hinzufügen",
+      "connect": "Verbinden",
+      "filter": "Filter...",
+      "localfile": "Lokale Datei",
+      "nofeatures": "Keine Objekte konnten importiert werden",
+      "noresults": "Keine Resultate oder ungültige URL",
+      "loading": "Laden...",
+      "url": "URL",
+      "urlplaceholder": "WMS, WMTS oder WFS URL eingeben..."
+    },
+    "layerinfo": {
+      "title": "Kartenebeneninformationen",
+      "abstract": "Zusammenfassung",
+      "attribution": "Attribution",
+      "keywords": "Schlüsselwörter",
+      "dataUrl": "Daten-URL",
+      "metadataUrl": "Metadaten-URL",
+      "legend": "Legende",
+      "maxscale": "Max. Darstellungsmassstab",
+      "minscale": "Min. Darstellungsmassstab"
+    },
+    "layertree": {
+      "compare": "Oberste Kartenebene vergleichen",
+      "importlayer": "Kartenebene importieren",
+      "maptip": "Kartentipps anzeigen",
+      "printlegend": "Legende drucken",
+      "deletealllayers": "Alle Ebenen entfernen",
+      "visiblefilter": "Unsichtbare Ebenen filtern",
+      "separator": "Separator",
+      "separatortooltip": "Separator hinzufügen",
+      "zoomtolayer": "Auf Layer zoomen",
+      "transparency": "Transparenz"
+    },
+    "locate": {
+      "metersUnit": "Meter",
+      "feetUnit": "Fuss",
+      "popup": "Im Umkreis von {distance} {unit} von diesem Punkt",
+      "statustooltip": {
+        "DISABLED": "Position: deaktiviert",
+        "LOCATING": "Position: wird bestimmt...",
+        "ENABLED": "Position: aktiviert",
+        "FOLLOWING": "Position: mit GPS bewegen",
+        "PERMISSION_DENIED": "Position: Zugriff verweigert"
+      }
+    },
+    "map": {
+      "loading": "Karte wird geladen..."
+    },
+    "mapinfotooltip": {
+      "elevation": "Höhe",
+      "title": "Position"
+    },
+    "measureComponent": {
+      "areaLabel": "Fläche",
+      "bearingLabel": "Richtung",
+      "lengthLabel": "Länge",
+      "pointLabel": "Position"
+    },
+    "print": {
+      "layout": "Format",
+      "grid": "Gitter",
+      "maximize": "Maximieren",
+      "minimize": "Minimieren",
+      "nolayouts": "Das gewählte Thema stellt keine Druck-Vorlagen zur Verfügung.",
+      "notheme": "Kein Thema selektiert",
+      "resolution": "Auflösung",
+      "rotation": "Rotation",
+      "scale": "Massstab",
+      "submit": "PDF erzeugen",
+      "output": "Druckausgabe",
+      "wait": "Bitte warten..."
+    },
+    "rasterexport": {
+      "format": "Format:",
+      "resolution": "Auflösung",
+      "selectinfo": "Rechteck aufziehen um die zu exportierende Region"
+    },
+    "redlining": {
+      "add": "Hinzufügen",
+      "border": "Rand",
+      "buffer": "Puffern",
+      "bufferlayername": "Objektpuffer",
+      "bufferdistance": "Distanz",
+      "bufferlayer": "Zielebene",
+      "buffercompute": "Berechnen",
+      "bufferselectfeature": "Zu pufferndes Objekt auswählen...",
+      "circle": "Kreis",
+      "delete": "Löschen",
+      "draw": "Zeichnen",
+      "edit": "Bearbeiten",
+      "fill": "Füllung",
+      "freehand": "Freihand",
+      "label": "Beschriftung",
+      "layer": "Kartenebene",
+      "line": "Linie",
+      "outline": "Rand",
+      "pick": "Auswählen",
+      "point": "Punkt",
+      "polygon": "Polygon",
+      "size": "Grösse",
+      "text": "Text",
+      "width": "Breite"
+    },
+    "scratchdrawing": {
+      "finish": "Abschliessen"
+    },
+    "search": {
+      "more": "Mehr...",
+      "search": "Suchen",
+      "searchall": "Ort suchen oder Karte hinzufügen...",
+      "all": "Alle",
+      "themes": "Themen",
+      "invisiblelayer": "Das Resultat liegt auf einer Ebene, die ausgeschaltet ist.",
+      "enablelayer": "Ebene einschalten",
+      "existinglayer": "Die Ebene existiert bereits in der Karte"
+    },
+    "serviceinfo": {
+      "title": "Informationen zum Thema",
+      "abstract": "Zusammenfassung",
+      "keywords": "Schlüsselwörter",
+      "onlineResource": "Online Ressource",
+      "contactPerson": "Kontaktperson",
+      "contactOrganization": "Organisation",
+      "contactPosition": "Stelle",
+      "contactPhone": "Telefon",
+      "contactEmail": "Email"
+    },
+    "share": {
+      "directLinkTitle": "Über einen direkten Link",
+      "generatingpermalink": "Permalink wird erzeugt",
+      "QRCodeLinkTitle": "QR Code (Smartphone)",
+      "socialIntro": "In den sozialen Medien"
+    },
+    "tooltip": {
+      "home": "Ganze Karte anzeigen",
+      "zoomin": "Hineinzoomen",
+      "zoomout": "Hinauszoomen",
+      "background": "Hintergrundkarte wechseln"
+    },
+    "themelayerslist": {
+      "addlayer": "Layer hinzufügen",
+      "addlayerstotheme": "Ebenen der Karte hinzufügen",
+      "addselectedlayers": "Selektierte Ebenen hinzufügen"
+    },
+    "themeswitcher": {
+      "filter": "Filter",
+      "addtotheme": "Dem aktuellen Thema hinzufügen",
+      "addlayerstotheme": "Ebenen der Karte hinzufügen",
+      "match": {
+        "title": "Titel",
+        "keywords": "Schlüsselwörter",
+        "abstract": "Zusammenfassung"
+      },
+      "openintab": "In Tab öffnen"
+    },
+    "vectorlayerpicker": {
+      "prompt": "Ebenenname eingeben"
+    },
+    "window": {
+      "close": "Schliessen",
+      "dock": "Andocken",
+      "undock": "Abdocken"
+    },
+    "oereb": {
+      "title": "Öffentlich-rechtliche Eigentumsbeschränkungen",
+      "failed": "Der Auszug aus dem Kataster der öffentlich-rechtlichen Eigentumsbeschränkungen konnte nicht abgefragt werden. Bitte wenden Sie sich an die Katasterverantwortliche Stelle: Amt für Geoinformation, Rötistrasse 4, 4501 Solothurn, agi.so.ch",
+      "concernedThemes": "Betroffene Themen",
+      "notConcernedThemes": "Nicht betroffene Themen",
+      "themeWithoutData": "Nicht verfügbare Themen",
+      "generalInformation": "Allgemeine und rechtliche Informationen",
+      "type": "Typ",
+      "share": "Anteil",
+      "perc": "Anteil in %",
+      "regulations": "Rechtsvorschriften",
+      "legalbasis": "Gesetzliche Grundlagen",
+      "hints": "Weitere Informationen und Hinweise",
+      "nrpoints": "Punkt(e)",
+      "responsibleoffice": "Zuständige Stelle",
+      "responsibleauthority": "Katasterverantwortliche Stelle",
+      "requestPdf": "PDF-Katasterauszug anfordern",
+      "fundations": "Grundlagedaten",
+      "generalinfo": "Allgemeine Informationen",
+      "hidefulllegend": "Vollständige Legende ausblenden",
+      "showfulllegend": "Vollständige Legende einblenden"
+    },
+    "plotdescr": {
+      "title": "Grundstücksbeschrieb",
+      "requestPdf": "Grundbuchplan (PDF) erstellen"
+    },
+    "plotinfotool": {
+      "loading": "Daten werden geladen...",
+      "failed": "Datenabfrage gescheitert"
+    }
+  }
+}
