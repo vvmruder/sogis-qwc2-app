@@ -306,7 +306,6 @@
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
                 {"key": "LayerTree", "icon": "layers"},
-                {"key": "PlotInfoTool", "icon": "plot_info", "comment": true},
                 {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Measure", "icon": "measure"},

@@ -124,6 +124,7 @@ export default {
                 attributeCalculator: CCCInterface.CCCAttributeCalculator
             },
             PlotInfoToolPlugin: {
+                attributeCalculator: CCCInterface.CCCAttributeCalculator,
                 themeLayerRestorer: themeLayerRestorer,
                 customInfoComponents: {
                     oereb: OerebDocument,
